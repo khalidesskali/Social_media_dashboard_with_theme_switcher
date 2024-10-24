@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  <body class="min-h-screen dark:bg-verydarkbluebg">
+    <div class="overlay w-full bg-VeryPaleBlueTop dark:bg-verydarkbluetop">
+      <div class="container mx-auto p-8">
+        <div class="header flex justify-between mb-12 max-md:flex-col">
+          <div
+            class="title max-lg:mb-5 max-md:border-b max-md:border-b-verydarkbluetop max-md:flex max-md:items-center max-md:flex-col"
+          >
+            <h1
+              class="font-bold text-5xl text-VeryDarkBlue mb-1 dark:text-white max-lg:text-3xl"
+            >
+              Social Media Dashboard
+            </h1>
+            <span class="text-DarkGrayishBlue font-bold block max-lg:mb-6"
+              >Total Followers: 23,004</span
+            >
+          </div>
+          <div
+            class="font-bold text-DarkGrayishBlue text-lg flex items-center max-md:justify-between gap-3"
+          >
+            <span>Dark Mode</span>
+            <div class="holder relative cursor-pointer dark:bg-darktheme">
+              <span
+                class="button right absolute rounded-full top-2/4 duration-300 bg-white w-6 h-6 cursor-pointer dark:bg-verydarkbluebg"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="cards grid gap-5 justify-items-center">
+          <div
+            class="card duration-300 dark:hover:bg-hoverdarkmode rounded-lg flex text-center justify-center flex-col border-t-8 border-facebook dark:bg-darkdesaturatedbluecard"
+          >
+            <div class="social flex items-center gap-3 mb-5 mx-auto">
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg"
+                class="w-8"
+              />
+              <span class="font-bold dark:text-desaturatedbluetext"
+                >@nathanf</span
+              >
+            </div>
+            <span
+              class="number font-bold text-darkdesaturatedbluecard block dark:text-white"
+              >1987</span
+            >
+            <span
+              class="followers block uppercase font-normal mb-4 dark:text-desaturatedbluetext"
+              >Followers</span
+            >
+            <span
+              class="length w-fit mx-auto text-limegreen font-bold relative before:content-[''] before:absolute"
+              >12 Today</span
+            >
+          </div>
+          <div
+            class="card dark:bg-darkdesaturatedbluecard rounded-lg flex text-center justify-center flex-col border-t-8 border-twitter dark:hover:bg-hoverdarkmode"
+          >
+            <div class="social flex items-center gap-3 mb-5 mx-auto">
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg"
+                class="w-8"
+              />
+              <span class="font-bold dark:text-desaturatedbluetext"
+                >@nathanf</span
+              >
+            </div>
+            <span
+              class="number font-bold text-darkdesaturatedbluecard block dark:text-white"
+              >1044</span
+            >
+            <span
+              class="followers block uppercase font-normal mb-4 dark:text-desaturatedbluetext"
+              >Followers</span
+            >
+            <span
+              class="length w-fit mx-auto text-limegreen font-bold relative before:content-[''] before:absolute"
+              >99 Today</span
+            >
+          </div>
+          <div
+            class="card dark:bg-darkdesaturatedbluecard insta rounded-lg flex text-center justify-center flex-col dark:hover:bg-hoverdarkmode"
+          >
+            <div class="social flex items-center gap-3 mb-5 mx-auto">
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg"
+                class="w-8"
+              />
+              <span class="font-bold dark:text-desaturatedbluetext">
+                @realnathanf</span
+              >
+            </div>
+            <span
+              class="number font-bold text-darkdesaturatedbluecard block dark:text-white"
+              >11k</span
+            >
+            <span
+              class="followers block uppercase font-normal mb-4 dark:text-desaturatedbluetext"
+              >Followers</span
+            >
+            <span
+              class="length w-fit mx-auto text-limegreen font-bold relative before:content-[''] before:absolute"
+            >
+              1099 Today</span
+            >
+          </div>
+          <div
+            class="card dark:bg-darkdesaturatedbluecard p-10 rounded-lg flex text-center justify-center flex-col border-t-8 border-youTube dark:hover:bg-hoverdarkmode"
+          >
+            <div class="social flex items-center gap-3 mb-5 mx-auto">
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg"
+                class="w-8"
+              />
+              <span class="font-bold dark:text-desaturatedbluetext"
+                >Nathan F.</span
+              >
+            </div>
+            <span
+              class="number font-bold text-darkdesaturatedbluecard block dark:text-white"
+              >8239</span
+            >
+            <span
+              class="followers block uppercase font-normal mb-4 dark:text-desaturatedbluetext"
+              >Subscribers</span
+            >
+            <span
+              class="length you w-fit mx-auto text-brightred font-bold relative before:content-[''] before:absolute"
+              >144 Today</span
+            >
+          </div>
+        </div>
+        <h3
+          class="mt-10 mb-5 text-DarkGrayishBlue font-bold text-4xl dark:text-white"
+        >
+          Overview - Today
+        </h3>
+        <div class="insights grid gap-5 justify-items-center items-center">
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Page Views</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >87</span
+              >
+              <span
+                class="percentage relative text-limegreen font-bold before:content-[''] before:absolute"
+                >3%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Likes</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >52</span
+              >
+              <span
+                class="percentage relative red text-brightred font-bold before:content-[''] before:absolute"
+                >2%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Likes</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >5462</span
+              >
+              <span
+                class="percentage relative text-limegreen font-bold before:content-[''] before:absolute"
+                >2257%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Profile Views</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >53k</span
+              >
+              <span
+                class="percentage relative text-limegreen font-bold before:content-[''] before:absolute"
+                >1375%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Retweets</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >117</span
+              >
+              <span
+                class="percentage relative text-limegreen font-bold before:content-[''] before:absolute"
+                >303%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue font-bold dark:text-desaturatedbluetext text-sm"
+              >
+                Likes</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >507</span
+              >
+              <span
+                class="percentage relative text-limegreen font-bold before:content-[''] before:absolute"
+                >553%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue text-sm font-bold dark:text-desaturatedbluetext"
+              >
+                Likes</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >107</span
+              >
+              <span
+                class="percentage red relative text-brightred font-bold before:content-[''] before:absolute"
+                >19%</span
+              >
+            </div>
+          </div>
+          <div
+            class="insight rounded-md w-80 p-7 dark:bg-darkdesaturatedbluecard dark:hover:bg-hoverdarkmode"
+          >
+            <div class="reaction flex items-center justify-between mb-10">
+              <span
+                class="text-DarkGrayishBlue text-sm font-bold dark:text-desaturatedbluetext"
+              >
+                Total Views</span
+              >
+              <img
+                src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <div class="growth flex items-center justify-between">
+              <span class="font-bold text-VeryDarkBlue text-4xl dark:text-white"
+                >1407</span
+              >
+              <span
+                class="percentage red relative text-brightred font-bold before:content-[''] before:absolute"
+                >12%</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
